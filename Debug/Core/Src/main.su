@@ -89,7 +89,6 @@ main.cpp:93:5:int main()	864	static
 main.cpp:179:6:void SystemClock_Config()	96	static
 main.cpp:225:13:void MX_ADC1_Init()	24	static
 main.cpp:294:13:void MX_ADC2_Init()	64	static
-main.cpp:371:13:void MX_CAN_Init()	8	static
 main.cpp:408:13:void MX_TIM1_Init()	80	static
 main.cpp:481:13:void MX_TIM3_Init()	48	static
 main.cpp:529:13:void MX_TIM4_Init()	48	static

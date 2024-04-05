@@ -97,7 +97,7 @@ class Convertor {
 	void period_interrupt(){
 
 		TIM1->CCR1 = Km * sin_table[k++] / 1000;
-		TIM1->CCR2 = Km * sin_table[m++] / 1000;
+//		TIM1->CCR2 = Km * sin_table[m++] / 1000;
 		TIM1->CCR3 = Km * sin_table[n++] / 1000;
 
 		if (k >= qty_point) {k = 0;}
