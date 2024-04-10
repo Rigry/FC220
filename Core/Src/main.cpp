@@ -128,10 +128,9 @@ int main(void)
   decltype(auto) led_red    = Pin{GPIOB, LED_RED_Pin  };
   decltype(auto) led_green  = Pin{GPIOB, LED_GREEN_Pin};
   decltype(auto) led_can    = Pin{GPIOC, LED_CAN_Pin  };
-  decltype(auto) ventilator = Pin{GPIOB, VENT_Pin     };
   decltype(auto) unload     = Pin{GPIOA, UNLOAD_Pin   };
   decltype(auto) condens    = Pin{GPIOC, CONDENS_Pin  };
-  decltype(auto) TD_DM      = Pin{GPIOB, TD_DM_Pin    };
+  decltype(auto) Start_2    = Pin{GPIOB, TD_DM_Pin    };
   decltype(auto) SP         = Pin{GPIOB, SP_Pin       };
   decltype(auto) Start      = Pin{GPIOB, START_Pin    };
   decltype(auto) Motor      = Pin{GPIOA, ASYNC_Pin    };
@@ -145,7 +144,7 @@ int main(void)
   decltype(auto) contactor = Contactor{adc, service};
 //  decltype(auto) cooler = Cooler{service};
 
-  decltype(auto) convertor = Convertor{adc, service, contactor, period_callback, adc_comparator_callback, led_red, led_green, ventilator, unload, condens, TD_DM, SP, Start, Motor};
+  decltype(auto) convertor = Convertor{adc, service, contactor, period_callback, adc_comparator_callback, led_red, led_green, unload, condens, Start_2, SP, Start, Motor};
 
 //  Timer timer1{500};
 

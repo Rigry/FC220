@@ -34,7 +34,7 @@ public:
 	}
 
 	void operator()(){
-		if(on_off and not enable and service.outData.high_voltage >= 300) {
+		if(on_off and not enable /*and service.outData.high_voltage >= 300*/) {
 			HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
 			TIM4->CCR1 = 1799;
 			if(is_on() and not timer.isCount()) {

@@ -256,6 +256,8 @@ public:
 			return arr_current_A[j];
 		if (i == phase_C)
 			return arr_current_C[j];
+
+		return 0;
 //		if (i == HV)
 //			return h_voltage;
 	}
